@@ -8,7 +8,16 @@ a {
   text-decoration: none;
 }
 
-.site-title {
+.site-title{
+  font-size: 36px;
+  color: black;
+  background-color: #008F95;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+.mood-title {
   margin: 0;
   padding: 10px 20px;
   font-size: 30px;
@@ -61,7 +70,9 @@ a {
 
 .box-content .box-image {
   margin: 5px;
-  height: 150px;
-  width: 200px;
+  height: 200px;
+  width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
   border: 2px solid #1b374f;
 }
