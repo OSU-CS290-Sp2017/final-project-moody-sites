@@ -16,6 +16,7 @@ a {
   background-color: #1e496b;
   color: #fff;
   border: 3px solid #1b374f;
+  text-align: center;
 }
 
 .box-container {
@@ -49,6 +50,22 @@ a {
 .box-content p {
   margin: 0;
 }
+
+.box-content .box-link{
+  color:#fff;
+}
+
+.box-link:hover{
+  color: #ef1065;
+}
+
+.box-content .box-image {
+  margin: 5px;
+  height: 150px;
+  width: 200px;
+  border: 2px solid #1b374f;
+}
+
 
 .box-content .box-attribution {
   margin-top: 8px;
