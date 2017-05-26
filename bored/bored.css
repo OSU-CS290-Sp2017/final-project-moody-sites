@@ -1,1 +1,76 @@
-/*bored.css*/
+/*bored.css
+papaya: #E24E42
+mustard: #E9B000
+blush: #EB6E80
+aqua: #008F95*/
+
+.site-title{
+  font-size: 36px;
+  color: black;
+  background-color: #008F95;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+body{
+  margin: 0;
+  padding: 0px;
+}
+
+
+.title-box{
+  background-color: #E24E42;
+  margin: 0;
+  padding: 10px;
+}
+
+.page-title{
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+.page-description{
+  font-size: 18px;
+  text-align: center;
+  margin: 0px;
+  padding: 10px;
+}
+
+.search-bar{
+  text-align: center;
+  margin-top: 15px;
+}
+
+.search-input{
+
+}
+
+.websites-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.website-box{
+  border: 2px solid black;
+  margin: 3px;
+}
+
+.website-picture-box{
+  background-color: #E9B000;
+  margin: 2px;
+}
+
+.website-name-box{
+  background-color: #EB6E80;
+  margin: 2px;
+}
