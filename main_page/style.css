@@ -1,11 +1,12 @@
 /*style.css*/
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Bree Serif'; font-size: 32px;
   margin: 0;
   background-color: #f0f0f0;
 }
 
 a {
+  font-family: 'Pacifico'; font-size: 40px;
   text-decoration: none;
 }
 
