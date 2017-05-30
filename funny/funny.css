@@ -1,9 +1,13 @@
 body {
-  font-family: Serif;
+  font-family: 'Bree Serif'; font-size: 32px;
   margin: 0;
-  background-color: #B0E0E6;
+  background-color: #c0d2e1;
 }
 
+a {
+  font-family: 'Pacifico'; font-size: 40px;
+  text-decoration: none;
+}
 
 .site-title{
   font-size: 36px;
