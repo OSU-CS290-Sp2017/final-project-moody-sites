@@ -55,6 +55,12 @@ a {
 .box-content {
   flex: 1 1 80%;
   margin-left: 10px;
+  padding-bottom: 10px;
+}
+
+.box-content .box-text{
+  display: inline-block;
+  height: 20%;
 }
 
 .box-content p {
@@ -63,6 +69,9 @@ a {
 
 .box-content .box-link{
   color:#fff;
+  display: flex;
+  flex: 0 1 28%;
+  height: 20%;
 }
 
 .box-link:hover{
