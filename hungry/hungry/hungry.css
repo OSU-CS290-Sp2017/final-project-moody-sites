@@ -1,0 +1,86 @@
+/*//#f4decb; sand
+//#94618e; grape
+//#49274a; eggplant
+#ff3b3f; watermelon
+#caebf2 sky*/
+
+
+body {
+  font-family: 'Bree Serif'; font-size: 32px;
+  margin: 0;
+  background-color: #caebf2;
+}
+
+a {
+  font-family: 'Pacifico'; font-size: 40px;
+  text-decoration: none;
+}
+
+.site-title{
+  font-size: 36px;
+  color: #fff;
+  background-color: #ff3b3f;;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+.mood-title {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 30px;
+  font-weight: 100;
+  background-color: #f4decb;
+  color: black;
+  border: 3px solid #1b374f;
+  text-align: center;
+}
+
+.box-container {
+  margin: 50px 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mood_box {
+  flex: 0 1 28%;
+  display: flex;
+  margin: 2px;
+  padding: 20px;
+  border: 3px solid #1b374f;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #ff3b3f;
+}
+
+.box_header{
+  text-decoration: none;
+  padding-bottom: 3px;
+  font-size: 20px;
+}
+
+.box-content {
+  flex: 1 1 80%;
+  margin-left: 10px;
+}
+
+.box-content p {
+  margin: 0;
+}
+
+.box-content .box-link{
+  color:#fff;
+}
+
+.box-link:hover{
+  color: #ef1065;
+}
+
+.box-content .box-image {
+  margin: 5px;
+  height: 200px;
+  width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid #1b374f;
+}
