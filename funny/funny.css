@@ -40,7 +40,7 @@ a {
   display: flex;
   margin: 2px;
   padding: 20px;
-  border: 3px solid #8B008B;
+  border: 3px solid #9A19C4;
   border-radius: 5px;
   color: #fff;
   background-color: #8A2BE2;
@@ -53,6 +53,7 @@ a {
 }
 
 .box-content {
+  font-size: 20px;
   flex: 1 1 80%;
   margin-left: 10px;
 }
@@ -69,8 +70,7 @@ a {
   color: #ef1065;
 }
 
-.box-content {
-  font-size: 20px;
+.box-content .box-image {
   margin: 5px;
   height: 200px;
   width: 300px;
