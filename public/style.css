@@ -1,0 +1,126 @@
+body {
+  font-family: 'Bree Serif'; font-size: 32px;
+  margin: 0;
+  background-color: #c0d2e1;
+}
+
+a {
+  font-family: 'Pacifico'; font-size: 40px;
+  text-decoration: none;
+}
+
+.site-title{
+  font-size: 36px;
+  color: black;
+  background-color:#c0c0c0;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+.mood-title {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 30px;
+  font-weight: 100;
+  background-color: #1e496b;
+  color: #fff;
+  border: 3px solid #1b374f;
+  text-align: center;
+}
+
+.box-container {
+  margin: 50px 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mood_box {
+  flex: 0 1 28%;
+  display: flex;
+  margin: 2px;
+  padding: 20px;
+  border: 3px solid #1b374f;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #1e496b;
+}
+
+.box_header{
+  text-decoration: none;
+  padding-bottom: 3px;
+  font-size: 20px;
+}
+
+.box-content {
+  flex: 1 1 80%;
+  margin-left: 10px;
+}
+
+.box-content p {
+  margin: 0;
+}
+
+.box-content .box-link{
+  color:#fff;
+}
+
+.box-link:hover{
+  color: #ef1065;
+}
+
+.box-content .box-image {
+  margin: 5px;
+  height: 200px;
+  width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid #1b374f;
+}
+
+.mood_box {
+  flex: 1 10%;
+  display: flex;
+  margin: 2px;
+  padding: 5px;
+  /*border: 3px solid #1b374f;
+  border-radius: 1px;*/
+  color: #fff;
+  /*background-color: #1e496b;*/
+  text-align: center;
+}
+
+#bored {
+  background-color: grey;
+  border-color: black;
+}
+
+#lonely {
+  background-color: dodgerblue;
+  border-color: blue;
+}
+
+#hungry {
+  background-color: red;
+  border-color: darkred;
+}
+
+#funny {
+  background-color: magenta;
+  border-color: purple;
+}
+
+.thebuttons {
+  font-size: 30px;
+  border-radius: 10%;
+  padding: 20px;
+  border-width: thick;
+}
+
+.box-content {
+  box-shadow: 10px 10px 20px #888888;
+}
+
+.box-content p {
+  margin: 0;
+}
