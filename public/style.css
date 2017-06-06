@@ -81,16 +81,14 @@ a {
 
 /*****************************below this point is the home page styling**********************/
 
-.mood_box {
+.moodButtons{
   flex: 1 10%;
   display: flex;
   margin: 2px;
   padding: 5px;
-  /*border: 3px solid #1b374f;
-  border-radius: 1px;*/
   color: #fff;
-  /*background-color: #1e496b;*/
   text-align: center;
+  margin-top: 100px;
 }
 
 #bored {
@@ -124,14 +122,52 @@ a {
   cursor: pointer;
 }
 
-/*.box-content {
-  box-shadow: 10px 10px 20px #888888;
+.hidden {
+  display: none;
 }
 
-.box-content p {
-  margin: 0;
-}*/
+.search-bar{
+  /*display: inline-block;*/
+  /*float: right;*/
+  /*align-items: center;*/
+  /*margin-right: 20px;*/
+  /*padding: 0;*/
+  /*line-height: 38px;*/
+  position: fixed;
+  top: 30%;
+  left: 30%;
+}
 
+#search-input {
+  padding: 4px;
+  font-size: 50px;
+  background-color: #eee;
+  border: 1px solid #dadada;
+  border-radius: 2px;
+}
+
+#search-input:focus {
+  outline: none;
+  background-color: #fff;
+}
+
+#search-button {
+  margin-left: -5px;
+  font-size: 50px;
+  background: none;
+  border: none;
+  color: #343434;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  color: #319df6;
+}
+
+#search-button:focus {
+  color: #319df6;
+  outline: none;
+}
 /*******************************************funny page************************************/
 #funny .mood-title {
   margin: 0;
@@ -264,14 +300,6 @@ a {
 }
 
 /********************************************hungry page*****************************/
-#hungry .site-title{
-  font-size: 36px;
-  color: #fff;
-  background-color: #ff3b3f;;
-  text-align: center;
-  padding: 10px;
-  margin: 0;
-}
 
 #hungry .mood-title {
   margin: 0;
