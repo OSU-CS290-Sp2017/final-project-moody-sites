@@ -1,11 +1,12 @@
+/*****************************below this point is the mood page styling**********************/
 body {
-  font-family: 'Bree Serif'; font-size: 32px;
+  font-family: 'Bree Serif';
   margin: 0;
   background-color: #c0d2e1;
 }
 
 a {
-  font-family: 'Pacifico'; font-size: 40px;
+  font-family: 'Pacifico';
   text-decoration: none;
 }
 
@@ -78,6 +79,8 @@ a {
   border: 2px solid #1b374f;
 }
 
+/*****************************below this point is the home page styling**********************/
+
 .mood_box {
   flex: 1 10%;
   display: flex;
@@ -117,10 +120,10 @@ a {
   border-width: thick;
 }
 
-.box-content {
+/*.box-content {
   box-shadow: 10px 10px 20px #888888;
 }
 
 .box-content p {
   margin: 0;
-}
+}*/
