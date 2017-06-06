@@ -126,7 +126,8 @@
         "title": "Bored Panda",
         "description": "Interesting and visually appealing content",
         "titleLink": "http://www.boredpanda.com/",
-        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png",
+        "style": "funny"
       },
       {
         "title": "Luke ready to fight.",
