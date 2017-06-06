@@ -1,0 +1,241 @@
+{
+  "bored": {
+    "pageName": "Feeling Bored?",
+    "boxes": [
+      {
+        "title": "Bored Panda",
+        "description": "Interesting and visually appealing content",
+        "titleLink": "http://www.boredpanda.com/",
+        "photoURL": "https://fthmb.tqn.com/QOltafFg-vWfS83EWKNfGSOb9r4=/768x0/filters:no_upscale()/about/bored-panda-57eea2763df78c690feab31f.jpg"
+      },
+      {
+        "title": "Brain Pickings",
+        "description": "Open your mind to some new knowledge",
+        "titleLink": "https://www.brainpickings.org/",
+        "photoURL": "https://fthmb.tqn.com/rNTfQ-_tDFNId5acJ9TZgvovE-o=/768x0/filters:no_upscale()/about/GettyImages-125832446-56d213503df78cfb37ca91c2.jpg"
+      },
+      {
+        "title": "TED",
+        "description": "Fascinating talks on various ideas and topics",
+        "titleLink": "https://www.ted.com/",
+        "photoURL": "https://fthmb.tqn.com/c2BjAwSc-hlnlnvYdChG5m6u-cU=/768x0/filters:no_upscale()/about/GettyImages-10163096-56d2164d5f9b5879cc836d60.jpg"
+      },
+      {
+        "title": "Laughing Squid",
+        "description": "Highly visual posts about art, culture and technology",
+        "titleLink": "https://laughingsquid.com/",
+        "photoURL": "https://fthmb.tqn.com/0vWYCqCdl74WrW915LwjkSpO9gA=/768x0/filters:no_upscale()/about/squid-58072dde3df78cbc28f29a45.jpg"
+      },
+      {
+        "title": "VSauce",
+        "description": "Vidoes that feed the curious and illuminate the amazing",
+        "titleLink": "http://www.vsauce.com/#/",
+        "photoURL": "https://fthmb.tqn.com/ZlfVb7BC8udIp5Ri4Zq04Dwp08g=/768x0/filters:no_upscale()/about/Screen-Shot-2015-03-02-at-2.08.43-PM-56a9fef63df78cf772abf689.png"
+      },
+      {
+        "title": "College Humor",
+        "description": "Find all sorts of wildly entertaining and hilarious articles, videos and photos",
+        "titleLink": "http://www.collegehumor.com/",
+        "photoURL": "https://fthmb.tqn.com/PX36YWGzt_QvxiUXl-1603eIqzg=/768x0/filters:no_upscale()/about/college-56d2314f3df78cfb37cc1a42.png"
+      },
+      {
+        "title": "Addicting Games",
+        "description": "Play tons of little games",
+        "titleLink": "http://www.addictinggames.com/",
+        "photoURL": "https://crunchbase-production-res.cloudinary.com/image/upload/c_limit,h_600,w_600/v1397187701/7fb80ad6cd5c3673c76515a265db26a5.png"
+      },
+      {
+        "title": "AOL Games",
+        "description": "Play various types of computer games",
+        "titleLink": "http://www.aol.com/games/?gm=1",
+        "photoURL": "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2013/03/games-730x388.png"
+      },
+      {
+        "title": "Zynga",
+        "description": "Play games that are produced by a popular gaming company",
+        "titleLink": "https://www.zynga.com/",
+        "photoURL": "http://media.coindesk.com/uploads/2014/01/Zynga-starts-playing-with-bitcoin.png"
+      }
+    ]
+  },
+
+  "hungry": {
+    "pageName": "Feeling Hungry?",
+    "boxes": [
+      {
+        "title": "Bored Panda",
+        "description": "Interesting and visually appealing content",
+        "titleLink": "http://www.boredpanda.com/",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      }
+    ]
+  },
+
+  "funny": {
+    "pageName": "Feeling Funny?",
+    "boxes": [
+      {
+        "title": "Bored Panda",
+        "description": "Interesting and visually appealing content",
+        "titleLink": "http://www.boredpanda.com/",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      }
+    ]
+  },
+
+  "lonely": {
+    "pageName": "Feeling Lonely?",
+    "boxes": [
+      {
+        "title": "Bored Panda",
+        "description": "Interesting and visually appealing content",
+        "titleLink": "http://www.boredpanda.com/",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      },
+      {
+        "title": "Luke ready to fight.",
+        "description": "Interesting and visually appealing content",
+        "titleLink":"",
+        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png"
+      }
+    ]
+  }
+}
