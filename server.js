@@ -25,10 +25,11 @@
   if (moodData) {
     var templateArgs = {
       box: moodData.boxes,
-      pageName: boxData[theMood].pageName
+      pageName: moodData.pageName,
+      style: theMood
     }
     res.render('moodPage', templateArgs);
-    
+
   } else {
     next();
   }
