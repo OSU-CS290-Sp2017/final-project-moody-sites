@@ -28,8 +28,7 @@
       pageName: boxData[theMood].pageName
     }
     res.render('moodPage', templateArgs);
-    console.log("boxData.boxes = ",boxData.boxes);
-    console.log("moodData = ",moodData);
+    
   } else {
     next();
   }
