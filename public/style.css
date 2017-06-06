@@ -120,6 +120,10 @@ a {
   border-width: thick;
 }
 
+.thebuttons:hover{
+  cursor: pointer;
+}
+
 /*.box-content {
   box-shadow: 10px 10px 20px #888888;
 }
@@ -127,3 +131,204 @@ a {
 .box-content p {
   margin: 0;
 }*/
+
+/*******************************************funny page************************************/
+#funny .mood-title {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 30px;
+  font-weight: 100;
+  background-color: #800080;
+  color: #fff;
+  border: 3px solid #800080;
+  text-align: center;
+}
+
+#funny .box-container {
+  margin: 50px 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#funny .box {
+  flex: 0 1 28%;
+  display: flex;
+  margin: 2px;
+  padding: 20px;
+  border: 3px solid #9A19C4;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #8A2BE2;
+}
+
+#funny .box_header{
+  text-decoration: none;
+  padding-bottom: 0;
+  font-size: 28px;
+}
+
+#funny .box-content {
+  font-size: 20px;
+  flex: 1 1 80%;
+  margin-left: 10px;
+}
+
+#funny .box-content p {
+  margin: 0;
+}
+
+#funny .box-content .box-link{
+  color:#fff;
+}
+
+#funny .box-link:hover{
+  color: #ef1065;
+}
+
+#funny .box-content .box-image {
+  margin: 5px;
+  height: 200px;
+  width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/***************************************lonely page*********************************/
+#lonely .mood-title {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 30px;
+  font-weight: 100;
+  background-color: #1e496b;
+  color: #fff;
+  border: 3px solid #1b374f;
+  text-align: center;
+}
+
+#lonely .box-container {
+  margin: 50px 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#lonely .mood_box {
+  flex: 0 1 28%;
+  display: flex;
+  margin: 2px;
+  padding: 20px;
+  border: 3px solid #1b374f;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #1e496b;
+}
+
+#lonely .box_header{
+  text-decoration: none;
+  padding-bottom: 3px;
+  font-size: 20px;
+}
+
+#lonely .box-content {
+  flex: 1 1 80%;
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+
+#lonely .box-content .box-text{
+  display: inline-block;
+  height: 20%;
+}
+
+#lonely .box-content p {
+  margin: 0;
+}
+
+#lonely .box-content .box-link{
+  color:#fff;
+  display: flex;
+  flex: 0 1 28%;
+  height: 20%;
+}
+
+#lonely .box-link:hover{
+  color: #ef1065;
+}
+
+#lonely .box-content .box-image {
+  margin: 5px;
+  height: 200px;
+  width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid #1b374f;
+}
+
+/********************************************hungry page*****************************/
+#hungry .site-title{
+  font-size: 36px;
+  color: #fff;
+  background-color: #ff3b3f;;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+#hungry .mood-title {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 30px;
+  font-weight: 100;
+  background-color: #f4decb;
+  color: black;
+  border: 3px solid #1b374f;
+  text-align: center;
+}
+
+#hungry .box-container {
+  margin: 50px 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#hungry .mood_box {
+  flex: 0 1 28%;
+  display: flex;
+  margin: 2px;
+  padding: 20px;
+  border: 3px solid #1b374f;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #ff3b3f;
+}
+
+#hungry .box_header{
+  text-decoration: none;
+  padding-bottom: 3px;
+  font-size: 20px;
+}
+
+#hungry .box-content {
+  flex: 1 1 80%;
+  margin-left: 10px;
+}
+
+#hungry .box-content p {
+  margin: 0;
+}
+
+#hungry .box-content .box-link{
+  color:#fff;
+}
+
+#hungry .box-link:hover{
+  color: #ef1065;
+}
+
+#hungry .box-content .box-image {
+  margin: 5px;
+  height: 200px;
+  width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid #1b374f;
+}
