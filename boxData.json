@@ -141,26 +141,25 @@
     "pageName": "Feeling Funny?",
     "boxes": [
       {
-        "title": "Bored Panda",
-        "description": "Interesting and visually appealing content",
-        "titleLink": "http://www.boredpanda.com/",
-        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png",
-        "style": "funny"
-
-      },
-      {
-        "title": "Luke ready to fight.",
-        "description": "Interesting and visually appealing content",
-        "titleLink":"",
-        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png",
+        "title": "Just 100 Funny Pictures",
+        "description": "Buzzfeed Article",
+        "titleLink": "https://www.buzzfeed.com/alexnaidus/literally-just-100-funny-pictures?utm_term=.ga8ZagRldg#.qgl3eBy9NB",
+        "photoURL": "http://smscommons.newschool.edu/news/wp-content/uploads/sites/18/2017/02/buzzfeed-logo.jpg",
         "style": "funny"
       },
       {
-        "title": "Luke ready to fight.",
-        "description": "Interesting and visually appealing content",
-        "titleLink":"",
-        "photoURL": "https://d1ai9qtk9p41kl.cloudfront.net/assets/mc/psuderman/2015_12/LukeGreenSaber-MOROTJ.png",
-        "style": "funny"
+        "title": "Wholesome Memes",
+        "description": "Facebook Page with Wholesome Content",
+        "titleLink":"https://www.facebook.com/wholesomememers/",
+        "photoURL": "https://goo.gl/ikL4ut",
+		    "style": "funny"
+      },
+      {
+        "title": "Birb Memes",
+        "description": "Facebook Page with Quality Bird Memes",
+        "titleLink":"https://www.facebook.com/Cool-Birb-Memes-226533577761012/",
+        "photoURL": "https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/18581677_325535834527452_788353329765445832_n.jpg?oh=e7582881bd76c9d30747329ffb09ea5b&oe=59AC719E"
+	     	"style": "funny"
       },
       {
         "title": "Luke ready to fight.",
