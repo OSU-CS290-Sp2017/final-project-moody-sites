@@ -1,4 +1,3 @@
-
 {
   "name": "final-project",
   "version": "1.0.0",
@@ -6,20 +5,20 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "handlebars views/partials/twit.handlebars -f public/twitTemplate.js",
+    "build": "handlebars views/partials/webBox.handlebars -f public/webBoxTemplate.js",
     "prestart": "npm run build",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/OSU-CS290-Sp2017/master-assignment-5.git"
+    "url": "git+ssh://git@github.com:OSU-CS290-Sp2017/final-project-moody-sites.git"
   },
   "author": "",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/OSU-CS290-Sp2017/master-assignment-5/issues"
+    "url": "https://github.com/OSU-CS290-Sp2017/final-project-moody-sites/issues"
   },
-  "homepage": "https://github.com/OSU-CS290-Sp2017/master-assignment-5#readme",
+  "homepage": "https://github.com/OSU-CS290-Sp2017/final-project-moody-sites",
   "dependencies": {
     "express": "^4.15.3",
     "express-handlebars": "^3.0.0",
