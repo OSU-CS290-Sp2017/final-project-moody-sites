@@ -1,7 +1,7 @@
-var lonelyKeywords = ["lonely","sad","depressed","alone","needy"];
-var boredKeywords = ["bored","unamused","tired","curious","lame"];
-var funnyKeywords = ["funny","humorous","laughable","comical","hilarious"];
-var hungryKeywords = ["hungry","starving","hangry","lathargic","empty"];
+var lonelyKeywords = ["lonely","sad","depressed","alone","needy","mad","angry","deserted","homeless","empty"];
+var boredKeywords = ["bored","unamused","tired","curious","lame","lazy","disinterested","fatigued","dull","inattentive"];
+var funnyKeywords = ["funny","humorous","laughable","comical","hilarious","happy","playful","jolly","merry","entertaining"];
+var hungryKeywords = ["hungry","starving","hangry","lathargic","empty","starved","craving","ravenous","greedy","eager"];
 
 
 
@@ -20,7 +20,7 @@ function searchFunction(){
   var isFound = false;
   var searchInput = searchBox.value.toLowerCase();
   // search for lonely
-  for(var k=0;k<5;k++){
+  for(var k=0;k<10;k++){
     if(lonelyKeywords[k] == searchInput) {
       lonelyButton.classList.remove('hidden');
       isFound = true;
