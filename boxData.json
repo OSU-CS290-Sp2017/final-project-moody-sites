@@ -186,7 +186,7 @@
       {
         "title": "Puppies!",
         "description": "Just infinite puppies",
-        "titleLink":"https://openpuppies.com"> ",
+        "titleLink":"https://openpuppies.com",
         "photoURL": "https://cuteorfunnyvideos.files.wordpress.com/2015/04/cute-puppy-face1_large.jpg",
         "style": "funny"
       },
@@ -206,9 +206,9 @@
       }
     ]
   },
-  
-  
-  
+
+
+
  "lonely": {
   "pageName": "Feeling Lonely?",
   "boxes": [
