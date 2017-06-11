@@ -26,7 +26,8 @@
     var templateArgs = {
       box: moodData.boxes,
       pageName: moodData.pageName,
-      style: theMood
+      style: theMood,
+      modal_set: true
     }
     res.render('moodPage', templateArgs);
 
