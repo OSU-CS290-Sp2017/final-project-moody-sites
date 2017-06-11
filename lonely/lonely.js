@@ -37,7 +37,6 @@ function generateNewBox(Boxtitle, Boxdescription, BoxtitleLink, BoxphotoURL) {
     photoURL: BoxphotoURL,
     style: "lonely"
   };
-  /*res.render('webBox', templateArgs);*/
   return boxTemplate(boxData);
 }
 
