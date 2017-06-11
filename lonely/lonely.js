@@ -26,15 +26,24 @@ function clearBoxInputValues() {
   }
 }
 
-function generateNewBox(title, description, titleLink, photoURL) {
-  var boxTemplate = Handlebars.templates.box;
+
+
+function generateNewBox(Boxtitle, Boxdescription, BoxtitleLink, BoxphotoURL) {
+  /*var boxTemplate = Handlebars.views.partials.webBox;*/
   var boxData = {
-    title: boxTitle,
+    title: Boxtitle,
+    description: Boxdescription,
+    titleLink: BoxtitleLink,
+    photoURL: BoxphotoURL,
+    style: "lonely"
+  /*  title: boxTitle,
     description: boxDescription,
     titleLink: boxTitleLink,
-    photoURL: boxPhotoURL
+    photoURL: boxPhotoURL,
+    style: boxStyle*/
   };
-  return boxTemplate(boxData);
+  res.render('webBox', templateArgs);
+/*  return boxTemplate(boxData);*/
 }
 
 function insertNewBox() {
@@ -43,6 +52,7 @@ function insertNewBox() {
   var boxDescription = document.getElementById('box-description-input').value;
   var boxTitleLink = document.getElementById('box-link-input').value;
   var boxPhotoURL = document.getElementById('box-photoURL-input').value;
+  /*var boxStyle = document.getElementById('lonely').value; /***********************/
 
   if (boxTitle && boxDescription && boxTitleLink && boxPhotoURL) {
       var newBox = generateNewBox(boxTitle, boxDescription, boxTitleLink, boxPhotoURL);
@@ -55,3 +65,23 @@ function insertNewBox() {
     alert('You must specify the title, description, title link, and photo URL!');
   }
 }
+
+
+
+
+var boxCollection = document.getElementsByClassName('mood_box');
+for (var i = 0; i < boxCollection.length; i++) {
+  allBoxes.push(boxCollection[i]);
+}
+
+var createBoxButton = document.getElementById('create-box-button');
+createBoxButton.addEventListener('click', showCreateBoxModal);
+
+var modalCloseButton = document.querySelector('#create-box-modal .modal-close-button');
+modalCloseButton.addEventListener('click', closeCreateBoxModal);
+
+var modalCancelButton = document.querySelector('#create-box-modal .modal-cancel-button');
+modalCancelButton.addEventListener('click', closeCreateBoxModal);
+
+var modalAcceptButton = document.querySelector('#create-box-modal .modal-accept-button');
+modalAcceptButton.addEventListener('click', insertNewBox);
