@@ -29,7 +29,7 @@ function clearBoxInputValues() {
 
 
 function generateNewBox(Boxtitle, Boxdescription, BoxtitleLink, BoxphotoURL) {
-  var boxTemplate = views.webBox;
+  var boxTemplate = Handlebars.templates.webBox;
   var boxData = {
     title: Boxtitle,
     description: Boxdescription,
