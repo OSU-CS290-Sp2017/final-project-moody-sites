@@ -29,21 +29,16 @@ function clearBoxInputValues() {
 
 
 function generateNewBox(Boxtitle, Boxdescription, BoxtitleLink, BoxphotoURL) {
-  /*var boxTemplate = Handlebars.views.partials.webBox;*/
+  var boxTemplate = views.webBox;
   var boxData = {
     title: Boxtitle,
     description: Boxdescription,
     titleLink: BoxtitleLink,
     photoURL: BoxphotoURL,
     style: "lonely"
-  /*  title: boxTitle,
-    description: boxDescription,
-    titleLink: boxTitleLink,
-    photoURL: boxPhotoURL,
-    style: boxStyle*/
   };
-  res.render('webBox', templateArgs);
-/*  return boxTemplate(boxData);*/
+  /*res.render('webBox', templateArgs);*/
+  return boxTemplate(boxData);
 }
 
 function insertNewBox() {
