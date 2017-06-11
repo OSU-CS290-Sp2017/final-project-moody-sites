@@ -20,7 +20,7 @@ function searchFunction(){
   var isFound = false;
   var searchInput = searchBox.value.toLowerCase();
   // search for lonely
-  for(var k=0;k<10;k++){
+  for(var k=0;k<lonelyKeywords.length;k++){
     if(lonelyKeywords[k] == searchInput) {
       lonelyButton.classList.remove('hidden');
       isFound = true;
@@ -67,7 +67,6 @@ function showCreateBoxModal() {
 
   modalBackdrop.classList.remove('hidden');
   createBoxModal.classList.remove('hidden');
-  console.log("inside showCreateBoxModal");
 }
 
 function closeCreateBoxModal() {
@@ -90,23 +89,23 @@ function clearBoxInputValues() {
 
 
 
-// function generateNewBox(Boxtitle, Boxdescription, BoxtitleLink, BoxphotoURL) {
-//   /*var boxTemplate = Handlebars.views.partials.webBox;*/
-//   var boxData = {
-//     title: Boxtitle,
-//     description: Boxdescription,
-//     titleLink: BoxtitleLink,
-//     photoURL: BoxphotoURL,
-//     style: "lonely"
-//   /*  title: boxTitle,
-//     description: boxDescription,
-//     titleLink: boxTitleLink,
-//     photoURL: boxPhotoURL,
-//     style: boxStyle*/
-//   };
-//   // res.render('webBox', templateArgs);
-// /*  return boxTemplate(boxData);*/
-// }
+function generateNewBox(Boxtitle, Boxdescription, BoxtitleLink, BoxphotoURL) {
+  /*var boxTemplate = Handlebars.views.partials.webBox;*/
+  var boxData = {
+    title: Boxtitle,
+    description: Boxdescription,
+    titleLink: BoxtitleLink,
+    photoURL: BoxphotoURL,
+    style: "lonely"
+  /*  title: boxTitle,
+    description: boxDescription,
+    titleLink: boxTitleLink,
+    photoURL: boxPhotoURL,
+    style: boxStyle*/
+  };
+  // res.render('webBox', templateArgs);
+/*  return boxTemplate(boxData);*/
+}
 
 function insertNewBox() {
 
