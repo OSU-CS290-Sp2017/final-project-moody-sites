@@ -45,8 +45,8 @@ app.post('/moods/:mood/addBox', function (req, res, next) {
     if (req.body && req.body.url)  { //req.body && req.body.titleLink && req.body.photoURL
 
       var box = {
-        title: req.body.title,
-        description: req.body.description,
+        title: req.title,
+        description: req.description,
         titleLink: req.body.titleLink,
         photoURL: req.body.photoURL,
         style: req.body.style
