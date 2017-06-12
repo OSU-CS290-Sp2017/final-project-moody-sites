@@ -89,43 +89,146 @@ function clearBoxInputValues() {
 
 
 
-function generateNewBox(Boxtitle, Boxdescription, BoxtitleLink, BoxphotoURL) {
-  /*var boxTemplate = Handlebars.views.partials.webBox;*/
-  var boxData = {
-    title: Boxtitle,
-    description: Boxdescription,
-    titleLink: BoxtitleLink,
-    photoURL: BoxphotoURL,
-    style: "lonely"
-  /*  title: boxTitle,
-    description: boxDescription,
-    titleLink: boxTitleLink,
-    photoURL: boxPhotoURL,
-    style: boxStyle*/
-  };
-  // res.render('webBox', templateArgs);
-/*  return boxTemplate(boxData);*/
-}
+// function generateNewBox(Boxtitle, Boxdescription, BoxtitleLink, BoxphotoURL) {
+//   /*var boxTemplate = Handlebars.views.partials.webBox;*/
+//   var boxData = {
+//     title: Boxtitle,
+//     description: Boxdescription,
+//     titleLink: BoxtitleLink,
+//     photoURL: BoxphotoURL,
+//     style: "lonely"
+//   /*  title: boxTitle,
+//     description: boxDescription,
+//     titleLink: boxTitleLink,
+//     photoURL: boxPhotoURL,
+//     style: boxStyle*/
+//   };
+//   // res.render('webBox', templateArgs);
+// /*  return boxTemplate(boxData);*/
+// }
 
-function insertNewBox() {
+/*
+ * This function uses Handlebars on the client side to generate HTML for a
+ * person photo and adds that person photo HTML into the DOM.
+ */
+ /*
 
-  var boxTitle = document.getElementById('box-title-input').value;
-  var boxDescription = document.getElementById('box-description-input').value;
-  var boxTitleLink = document.getElementById('box-link-input').value;
-  var boxPhotoURL = document.getElementById('box-photoURL-input').value;
-  /*var boxStyle = document.getElementById('lonely').value; /***********************/
 
-  if (boxTitle && boxDescription && boxTitleLink && boxPhotoURL) {
-      var newBox = generateNewBox(boxTitle, boxDescription, boxTitleLink, boxPhotoURL);
-      var boxContainer = document.querySelector('.box-container');
-      boxContainer.insertAdjacentHTML('beforehand', newBox);
-      allBoxes.push(newBox);
+  * This function will communicate with our server to store the specified
+  * photo for a given person.
+  */
+ function storeBox(currentMood,boxTitle,boxDescription,boxTitleLink,boxPhotoURL,callback) {
 
-      closeCreateBoxModal();
-  } else {
-    alert('You must specify the title, description, title link, and photo URL!');
+   var postURL = "/moods/" + currentMood + "/addBox/";
+
+   var postRequest = new XMLHttpRequest();
+   postRequest.open('POST', postURL);
+   postRequest.setRequestHeader('Content-Type', 'application/json');
+
+   postRequest.addEventListener('load', function (event) {
+     var error;
+     if (event.target.status !== 200) {
+       error = event.target.response;
+     }
+     callback(error);
+   });
+
+   var postBody = {
+     title: boxTitle,
+     description: boxDescription,
+     titleLink: boxTitleLink,
+     photoURL: boxPhotoURL,
+     style: currentMood
+   };
+
+   console.log(postBody);
+   postRequest.send(JSON.stringify(postBody));
+
+ }
+ /*
+ * Small function to get a person's identifier from the current URL.
+ */
+function getCurrentMood() {
+  var pathComponents = window.location.pathname.split('/');
+  if (pathComponents[0] !== '' && pathComponents[1] !== 'mood') {
+    return null;
   }
+  return pathComponents[2];
 }
+
+
+function insertBox() {
+
+  var boxTitle = document.getElementById('box-title-input').value || '';
+  var boxDescription = document.getElementById('box-description-input').value || '';
+  var boxTitleLink = document.getElementById('box-link-input').value || '';
+  var boxPhotoURL = document.getElementById('box-photoURL-input').value || '';
+
+  if (boxTitleLink.trim() && boxPhotoURL.trim()) {
+
+    var currentMood = getCurrentMood();
+    if (currentMood) {
+      console.log("== currentMood:", currentMood);
+
+      storeBox(currentMood,boxTitle,boxDescription,boxTitleLink,boxPhotoURL, function (err) {
+
+        if (err) {
+          alert("Unable to save box.  Got this error:\n\n" + err);
+        } else {
+
+          var boxTemplate = Handlebars.templates.webBoxTemplate;
+          var templateArgs = {
+              title: boxTitle,
+              description: boxDescription,
+              titleLink: boxTitleLink,
+              photoURL: boxPhotoURL,
+              style: currentMood
+            };
+
+          var boxHTML = boxTemplate(templateArgs);
+          // console.log(photoCardHTML);
+
+          var boxContainer = document.querySelector('.box-container');
+          boxContainer.insertAdjacentHTML('beforeend', boxHTML);
+
+        }
+
+      });
+
+    }
+
+    closeCreateBoxModal();
+
+  } else {
+
+    alert('You must specify a value for the "URL" field.');
+
+  }
+
+}
+
+
+
+// function insertNewBox() {
+//
+//   var boxTitle = document.getElementById('box-title-input').value;
+//   var boxDescription = document.getElementById('box-description-input').value;
+//   var boxTitleLink = document.getElementById('box-link-input').value;
+//   var boxPhotoURL = document.getElementById('box-photoURL-input').value;
+//   /*var boxStyle = document.getElementById('lonely').value; /***********************/
+//
+//
+//   if (boxTitle && boxDescription && boxTitleLink && boxPhotoURL) {
+//       var newBox = generateNewBox(boxTitle, boxDescription, boxTitleLink, boxPhotoURL);
+//       var boxContainer = document.querySelector('.box-container');
+//       boxContainer.insertAdjacentHTML('beforehand', newBox);
+//       allBoxes.push(newBox);
+//
+//       closeCreateBoxModal();
+//   } else {
+//     alert('You must specify the title, description, title link, and photo URL!');
+//   }
+// }
 
 
 
@@ -136,7 +239,7 @@ for (var i = 0; i < boxCollection.length; i++) {
 }
 
 
-// window.addEventListener('DOMContentLoaded', function (event) {
+ window.addEventListener('DOMContentLoaded', function (event) {
 
 
   var createBoxButton = document.getElementById('create-box-button');
@@ -154,6 +257,6 @@ if(modalCancelButton){
 }
   var modalAcceptButton = document.querySelector('#create-box-modal .modal-accept-button');
 if(modalAcceptButton){
-  modalAcceptButton.addEventListener('click', insertNewBox);
+  modalAcceptButton.addEventListener('click', insertBox);
 }
-// });
+ });
