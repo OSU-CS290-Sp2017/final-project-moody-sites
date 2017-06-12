@@ -127,7 +127,7 @@ function insertBox() {
           // console.log(photoCardHTML);
 
           var boxContainer = document.querySelector('.box-container');
-          boxContainer.insertAdjacentHTML('beforeend', boxHTML);
+          boxContainer.insertAdjacentHTML('beforend', boxHTML);
 
         }
 
