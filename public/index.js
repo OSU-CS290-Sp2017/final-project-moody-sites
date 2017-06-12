@@ -102,7 +102,11 @@ function insertBox() {
   var boxTitleLink = document.getElementById('box-link-input').value || '';
   var boxPhotoURL = document.getElementById('box-photoURL-input').value || '';
 
-  if (boxTitleLink.trim() && boxPhotoURL.trim()) {
+  if((boxTitleLink.search('http://') < 0)) {
+    boxTitleLink = "http://" + boxTitleLink;
+  }
+
+  if (boxTitle.trim() && boxDescription.trim() && boxTitleLink.trim() && boxPhotoURL.trim()) {
 
     var currentMood = getCurrentMood();
     if (currentMood) {
@@ -127,7 +131,7 @@ function insertBox() {
           // console.log(photoCardHTML);
 
           var boxContainer = document.querySelector('.box-container');
-          boxContainer.insertAdjacentHTML('beforend', boxHTML);
+          boxContainer.insertAdjacentHTML('beforeend', boxHTML);
 
         }
 
