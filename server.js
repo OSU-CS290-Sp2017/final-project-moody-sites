@@ -42,7 +42,7 @@ app.post('/moods/:mood/addBox', function (req, res, next) {
   var mood = boxData[req.params.mood];
 
   if (mood) {
-    if (req.body && req.body.url)  { //req.body && req.body.titleLink && req.body.photoURL
+    if (req.body && req.body.photoURL)  { //req.body && req.body.titleLink && req.body.photoURL
 
       var box = {
         title: req.title,
