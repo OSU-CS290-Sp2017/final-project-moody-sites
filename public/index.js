@@ -114,7 +114,7 @@ function insertBox() {
           alert("Unable to save box.  Got this error:\n\n" + err);
         } else {
 
-          var boxTemplate = Handlebars.templates.webBoxTemplate;
+          var boxTemplate = Handlebars.templates.webBox;
           var templateArgs = {
               title: boxTitle,
               description: boxDescription,
@@ -127,7 +127,7 @@ function insertBox() {
           // console.log(photoCardHTML);
 
           var boxContainer = document.querySelector('.box-container');
-          boxContainer.insertAdjacentHTML('beforehand', boxHTML);
+          boxContainer.insertAdjacentHTML('beforeend', boxHTML);
 
         }
 
