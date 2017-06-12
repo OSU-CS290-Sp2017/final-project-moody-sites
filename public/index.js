@@ -87,67 +87,6 @@ function clearBoxInputValues() {
   }
 }
 
-
-
-// function generateNewBox(Boxtitle, Boxdescription, BoxtitleLink, BoxphotoURL) {
-//   /*var boxTemplate = Handlebars.views.partials.webBox;*/
-//   var boxData = {
-//     title: Boxtitle,
-//     description: Boxdescription,
-//     titleLink: BoxtitleLink,
-//     photoURL: BoxphotoURL,
-//     style: "lonely"
-//   /*  title: boxTitle,
-//     description: boxDescription,
-//     titleLink: boxTitleLink,
-//     photoURL: boxPhotoURL,
-//     style: boxStyle*/
-//   };
-//   // res.render('webBox', templateArgs);
-// /*  return boxTemplate(boxData);*/
-// }
-
-/*
- * This function uses Handlebars on the client side to generate HTML for a
- * person photo and adds that person photo HTML into the DOM.
- */
- /*
-
-
-  * This function will communicate with our server to store the specified
-  * photo for a given person.
-  */
- function storeBox(currentMood,boxTitle,boxDescription,boxTitleLink,boxPhotoURL,callback) {
-
-   var postURL = "/moods/" + currentMood + "/addBox/";
-
-   var postRequest = new XMLHttpRequest();
-   postRequest.open('POST', postURL);
-   postRequest.setRequestHeader('Content-Type', 'application/json');
-
-   postRequest.addEventListener('load', function (event) {
-     var error;
-     if (event.target.status !== 200) {
-       error = event.target.response;
-     }
-     callback(error);
-   });
-
-   var postBody = {
-     title: boxTitle,
-     description: boxDescription,
-     titleLink: boxTitleLink,
-     photoURL: boxPhotoURL,
-     style: currentMood
-   };
-
-   console.log(postBody);
-   postRequest.send(JSON.stringify(postBody));
-
- }
- /*
- * Small function to get a person's identifier from the current URL.
- */
 function getCurrentMood() {
   var pathComponents = window.location.pathname.split('/');
   if (pathComponents[0] !== '' && pathComponents[1] !== 'mood') {
@@ -155,7 +94,6 @@ function getCurrentMood() {
   }
   return pathComponents[2];
 }
-
 
 function insertBox() {
 
@@ -189,7 +127,7 @@ function insertBox() {
           // console.log(photoCardHTML);
 
           var boxContainer = document.querySelector('.box-container');
-          boxContainer.insertAdjacentHTML('beforeend', boxHTML);
+          boxContainer.insertAdjacentHTML('beforehand', boxHTML);
 
         }
 
@@ -206,6 +144,71 @@ function insertBox() {
   }
 
 }
+
+// function generateNewBox(Boxtitle, Boxdescription, BoxtitleLink, BoxphotoURL) {
+//   /*var boxTemplate = Handlebars.views.partials.webBox;*/
+//   var boxData = {
+//     title: Boxtitle,
+//     description: Boxdescription,
+//     titleLink: BoxtitleLink,
+//     photoURL: BoxphotoURL,
+//     style: "lonely"
+//   /*  title: boxTitle,
+//     description: boxDescription,
+//     titleLink: boxTitleLink,
+//     photoURL: boxPhotoURL,
+//     style: boxStyle*/
+//   };
+//   // res.render('webBox', templateArgs);
+// /*  return boxTemplate(boxData);*/
+// }
+
+/*
+ * This function uses Handlebars on the client side to generate HTML for a
+ * person photo and adds that person photo HTML into the DOM.
+ */
+ /*
+
+
+  * This function will communicate with our server to store the specified
+  * photo for a given person.
+  */
+ function storeBox(currentMood,title,description,titleLink,photoURL,callback) {
+
+   var postURL = "/moods/" + currentMood + "/addBox/";
+
+   var postRequest = new XMLHttpRequest();
+   postRequest.open('POST', postURL);
+   postRequest.setRequestHeader('Content-Type', 'application/json');
+
+   postRequest.addEventListener('load', function (event) {
+     var error;
+     if (event.target.status !== 200) {
+       error = event.target.response;
+       console.log("This is the target error:" + error);
+     }
+     callback(error);
+   });
+
+   var postBody = {
+     title: title,
+     description: description,
+     titleLink: titleLink,
+     photoURL: photoURL,
+     style: currentMood
+   };
+
+   console.log(postBody);
+   postRequest.send(JSON.stringify(postBody));
+
+ }
+ /*
+ * Small function to get a person's identifier from the current URL.
+ */
+
+
+
+
 
 
 
@@ -233,10 +236,10 @@ function insertBox() {
 
 
 
-var boxCollection = document.getElementsByClassName('mood_box');
+/*var boxCollection = document.getElementsByClassName('mood_box');
 for (var i = 0; i < boxCollection.length; i++) {
   allBoxes.push(boxCollection[i]);
-}
+}*/
 
 
  window.addEventListener('DOMContentLoaded', function (event) {

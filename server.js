@@ -14,6 +14,8 @@
  app.engine('handlebars', exphbs({defaultLayout: 'main'}));
  app.set('view engine', 'handlebars');
 
+app.use(bodyParser.json());
+
  app.get('/', function (req, res, next) {
 
    res.render('homePage');
@@ -31,7 +33,6 @@
       modal_set: true
     }
     res.render('moodPage', templateArgs);
-
   } else {
     next();
   }
@@ -63,17 +64,13 @@ app.post('/moods/:mood/addBox', function (req, res, next) {
       });
 
     } else {
-      res.status(400).send("Mood box must have a URL.");
+      console.log("this is the box:" + box);
+      res.status(400).send("Server.js: 67 - Mood box must have a URL.");
     }
-
   } else {
     next();
   }
 });
-
-
-
-
 
  app.use(express.static(path.join(__dirname, 'public')));
 
