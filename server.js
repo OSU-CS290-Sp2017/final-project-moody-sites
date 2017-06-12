@@ -45,15 +45,16 @@ app.post('/moods/:mood/addBox', function (req, res, next) {
     if (req.body && req.body.photoURL)  { //req.body && req.body.titleLink && req.body.photoURL
 
       var box = {
-        title: req.title,
-        description: req.description,
+        title: req.body.title,
+        description: req.body.description,
         titleLink: req.body.titleLink,
         photoURL: req.body.photoURL,
         style: req.body.style
       };
 
       mood.boxes = mood.boxes || [];
-
+      console.log("box ",box);
+      //console.log("addBox ",addBox);
       mood.boxes.push(box);
       fs.writeFile('boxData.json', JSON.stringify(boxData), function (err) {
         if (err) {
