@@ -5,6 +5,7 @@
  var fs = require('fs');
  var express = require('express');
  var exphbs = require('express-handlebars');
+ var bodyParser = require('body-parser');
 
  var boxData = require('./boxData');
  var app = express();
@@ -35,6 +36,44 @@
     next();
   }
 });
+
+app.post('/moods/:mood/addBox', function (req, res, next) {
+  var mood = boxData[req.params.mood];
+
+  if (mood) {
+    if (req.body && req.body.url)  { //req.body && req.body.titleLink && req.body.photoURL
+
+      var box = {
+        title: req.body.title,
+        description: req.body.description,
+        titleLink: req.body.titleLink,
+        photoURL: req.body.photoURL,
+        style: req.body.style
+      };
+
+      mood.boxes = mood.boxes || [];
+
+      mood.boxes.push(box);
+      fs.writeFile('boxData.json', JSON.stringify(boxData), function (err) {
+        if (err) {
+          res.status(500).send("Unable to save box to \"database\".");
+        } else {
+          res.status(200).send();
+        }
+      });
+
+    } else {
+      res.status(400).send("Mood box must have a URL.");
+    }
+
+  } else {
+    next();
+  }
+});
+
+
+
+
 
  app.use(express.static(path.join(__dirname, 'public')));
 
